@@ -1,0 +1,198 @@
+.dashboardPage {
+  position: relative;
+  min-height: calc(100vh - var(--nav-height));
+  padding-top: calc(var(--nav-height) + 2rem);
+  padding-bottom: 4rem;
+  background: #FAF8F3;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.welcomeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: #F7ECEE;
+  border: 1px solid rgba(107, 31, 43, 0.2);
+  color: #6B1F2B;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.roleTag {
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: #6B1F2B;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1F2328;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #6B6B6B;
+  font-size: 1rem;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.metricCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border: 1px solid #E5DED2;
+  box-shadow: 0 4px 16px rgba(31, 35, 40, 0.04);
+}
+
+.metricTitle {
+  font-size: 0.8rem;
+  color: #858585;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1F2328;
+}
+
+.metricSubtext {
+  font-size: 0.8rem;
+  color: #6B1F2B;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.tabsHeader {
+  display: flex;
+  gap: 0.75rem;
+  border-bottom: 1px solid #E5DED2;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.tabBtn {
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  color: #6B6B6B;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-family: var(--font-heading);
+}
+
+.tabBtn:hover {
+  color: #6B1F2B;
+}
+
+.tabBtnActive {
+  color: #6B1F2B;
+  border-bottom-color: #6B1F2B;
+  background: #F7ECEE;
+  border-radius: 6px 6px 0 0;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dataTable th,
+.dataTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #E5DED2;
+}
+
+.dataTable th {
+  color: #858585;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  background: #FAF8F3;
+}
+
+.dataTable td {
+  color: #1F2328;
+  font-size: 0.9rem;
+}
+
+.actionBtn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.statusPill {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusSuccess {
+  background: #ECFDF5;
+  color: #3F7D4A;
+  border: 1px solid #A7F3D0;
+}
+
+.statusPending {
+  background: #FFFBEB;
+  color: #B7791F;
+  border: 1px solid #FDE68A;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 35, 40, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modalCard {
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #FFFFFF;
+  border: 1px solid #E5DED2;
+  box-shadow: 0 16px 40px rgba(31, 35, 40, 0.15);
+}

@@ -1,0 +1,124 @@
+/* CourseExplorer.module.css */
+.explorer {
+  width: 100%;
+}
+
+.controlsCard {
+  background: rgba(7, 17, 31, 0.4);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+  margin-bottom: 2.5rem;
+}
+
+.controlsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-family: var(--font-tech);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.15);
+}
+
+.select option {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.clearSearch {
+  position: absolute;
+  right: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.clearSearch:hover {
+  color: var(--text-primary);
+}
+
+.clearBtnGroup {
+  display: flex;
+}
+
+.clearBtn {
+  width: 100%;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+}
+
+.resultsHeader {
+  margin-bottom: 1.5rem;
+}
+
+.countText {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.gridItem {
+  display: flex;
+}
+
+.noResults {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+.noResults h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.noResults p {
+  color: var(--text-muted);
+}

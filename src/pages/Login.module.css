@@ -1,0 +1,127 @@
+/* Login.module.css - Institutional Palette */
+.loginPage {
+  background: #FAF8F3;
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 480px;
+  background: #FFFFFF;
+  border: 1px solid #E5DED2;
+  box-shadow: 0 12px 32px rgba(31, 35, 40, 0.06);
+}
+
+.form {
+  text-align: left;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1F2328;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #6B6B6B;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.errorBanner {
+  background: #FDF2F2;
+  border: 1px solid #FECDCA;
+  color: #B42318;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6B6B6B;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #FFFFFF;
+  border: 1px solid #D8CEC0;
+  border-radius: var(--radius-md);
+  color: #1F2328;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input::placeholder {
+  color: #9A948B;
+}
+
+.input:focus {
+  border-color: #6B1F2B;
+  box-shadow: 0 0 0 3px rgba(107, 31, 43, 0.12);
+}
+
+.actionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  color: #6B6B6B;
+  cursor: pointer;
+}
+
+.forgot {
+  color: #6B1F2B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.signupPrompt {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #858585;
+  text-align: center;
+}
+
+.signupPrompt a {
+  color: #6B1F2B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signupPrompt a:hover {
+  text-decoration: underline;
+}

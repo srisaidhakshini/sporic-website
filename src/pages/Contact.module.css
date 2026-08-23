@@ -1,0 +1,29 @@
+/* Contact.module.css - Institutional Palette */
+.contactPage {
+  background: #FAF8F3;
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+}
+
+.banner {
+  position: relative;
+  padding: 5rem 0 3rem 0;
+  text-align: center;
+  background: #F1EDE4;
+  border-bottom: 1px solid #E5DED2;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #1F2328;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #6B6B6B;
+  max-width: 600px;
+  margin: 0 auto;
+}

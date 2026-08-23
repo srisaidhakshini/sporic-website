@@ -1,0 +1,245 @@
+/* Register.module.css - Institutional Palette */
+.registerPage {
+  background: #FAF8F3;
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 580px;
+  background: #FFFFFF;
+  border: 1px solid #E5DED2;
+  box-shadow: 0 12px 32px rgba(31, 35, 40, 0.06);
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F1EDE4;
+  border: 1px solid #E5DED2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #858585;
+  transition: all var(--transition-base);
+}
+
+.activeStep {
+  background: #6B1F2B;
+  border-color: #6B1F2B;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(107, 31, 43, 0.25);
+}
+
+.connector {
+  flex-grow: 1;
+  height: 2px;
+  background: #E5DED2;
+  margin: 0 0.5rem;
+}
+
+.form {
+  text-align: left;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1F2328;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #6B6B6B;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.errorBanner {
+  background: #FDF2F2;
+  border: 1px solid #FECDCA;
+  color: #B42318;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6B6B6B;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #FFFFFF;
+  border: 1px solid #D8CEC0;
+  border-radius: var(--radius-md);
+  color: #1F2328;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input::placeholder {
+  color: #9A948B;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #6B1F2B;
+  box-shadow: 0 0 0 3px rgba(107, 31, 43, 0.12);
+}
+
+.select option {
+  background: #FFFFFF;
+  color: #1F2328;
+}
+
+.resendRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #858585;
+}
+
+.resendBtn {
+  color: #6B1F2B;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.batchesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.batchItem {
+  display: flex;
+  align-items: center;
+  background: #F1EDE4;
+  border: 1px solid #E5DED2;
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.batchItem:hover {
+  background: #F7ECEE;
+  border-color: #6B1F2B;
+}
+
+.activeBatch {
+  border-color: #6B1F2B;
+  background: #F7ECEE !important;
+}
+
+/* Success layout styles */
+.successBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.successIcon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #ECFDF5;
+  border: 1.5px solid #A7F3D0;
+  color: #3F7D4A;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.receipt {
+  width: 100%;
+  margin: 2rem 0;
+  background: #F1EDE4;
+  border: 1px dashed #D8CEC0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  text-align: left;
+}
+
+.receiptRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  border-bottom: 1px solid #E5DED2;
+  padding-bottom: 0.5rem;
+}
+
+.receiptRow:last-child {
+  border: none;
+  padding: 0;
+}
+
+.receiptRow span {
+  color: #6B6B6B;
+}
+
+.finalInstruction {
+  font-size: 0.85rem;
+  color: #6B6B6B;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 580px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,66 @@
+/* DomainPages.module.css - Institutional Palette */
+.domainPage {
+  background: #FAF8F3;
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+}
+
+.banner {
+  position: relative;
+  padding: 5rem 0 3rem 0;
+  text-align: center;
+  background: #F1EDE4;
+  border-bottom: 1px solid #E5DED2;
+  overflow: hidden;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #1F2328;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #6B6B6B;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.glowOrb {
+  position: absolute;
+  top: -50%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  background: rgba(107, 31, 43, 0.05); /* Technology: Burgundy */
+  pointer-events: none;
+}
+
+.glowOrbCyan {
+  position: absolute;
+  top: -50%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  background: rgba(74, 20, 29, 0.05); /* Management: Dark Burgundy */
+  pointer-events: none;
+}
+
+.glowOrbViolet {
+  position: absolute;
+  top: -50%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  background: rgba(176, 141, 87, 0.06); /* Leadership: Muted Gold */
+  pointer-events: none;
+}

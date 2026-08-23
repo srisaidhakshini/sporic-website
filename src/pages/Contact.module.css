@@ -1,6 +1,6 @@
-/* Contact.module.css - Institutional Palette */
+/* Contact.module.css - Pure White & Crisp Black Theme */
 .contactPage {
-  background: #FAF8F3;
+  background: #FFFFFF;
   min-height: 100vh;
   padding-top: var(--nav-height);
 }
@@ -9,21 +9,21 @@
   position: relative;
   padding: 5rem 0 3rem 0;
   text-align: center;
-  background: #F1EDE4;
-  border-bottom: 1px solid #E5DED2;
+  background: #FAFAFA;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .title {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
-  color: #1F2328;
+  color: #111111;
   margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 1.1rem;
-  color: #6B6B6B;
+  color: #555555;
   max-width: 600px;
   margin: 0 auto;
 }

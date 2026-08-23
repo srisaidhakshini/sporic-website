@@ -1,6 +1,6 @@
-/* Register.module.css */
+/* Register.jsx.module.css - Pure White & Crisp Black Theme */
 .registerPage {
-  background: var(--bg-primary);
+  background: #FFFFFF;
   min-height: 100vh;
   padding-top: var(--nav-height);
   position: relative;
@@ -10,8 +10,10 @@
 .formCard {
   width: 100%;
   max-width: 580px;
-  background: rgba(7, 17, 31, 0.5);
-  border: 1px solid rgba(14, 165, 233, 0.15);
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-lg);
 }
 
 .stepper {
@@ -26,28 +28,29 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-tech);
+  font-family: var(--font-heading);
   font-size: 0.85rem;
-  color: var(--text-muted);
+  font-weight: 700;
+  color: #888888;
   transition: all var(--transition-base);
 }
 
 .activeStep {
-  background: var(--accent-blue-dim);
-  border-color: var(--accent-blue);
-  color: var(--text-primary);
-  box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
+  background: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .connector {
   flex-grow: 1;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.08);
+  height: 2px;
+  background: #E5E5E5;
   margin: 0 0.5rem;
 }
 
@@ -56,181 +59,36 @@
 }
 
 .title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #111111;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .subtitle {
-  font-size: 0.88rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  color: #555555;
   line-height: 1.5;
   margin-bottom: 2rem;
   text-align: center;
-}
-
-.errorBanner {
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.2);
-  color: #f87171;
-  padding: 0.75rem;
-  border-radius: var(--radius-md);
-  font-size: 0.85rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.inputGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.label {
-  font-family: var(--font-tech);
-  font-size: 0.65rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--text-muted);
 }
 
 .input,
 .select {
   width: 100%;
   padding: 0.75rem 1rem;
-  background: rgba(2, 6, 23, 0.6);
-  border: 1px solid rgba(14, 165, 233, 0.15);
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
   border-radius: var(--radius-md);
-  color: var(--text-primary);
+  color: #111111;
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   outline: none;
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .input:focus,
 .select:focus {
-  border-color: var(--accent-blue);
-  box-shadow: 0 0 10px rgba(14, 165, 233, 0.15);
-}
-
-.select option {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-}
-
-.resendRow {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.resendBtn {
-  color: var(--accent-cyan);
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-decoration: underline;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.formGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.batchesList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.batchItem {
-  display: flex;
-  align-items: center;
-  background: rgba(2, 6, 23, 0.4);
-  border: 1px solid rgba(14, 165, 233, 0.15);
-  border-radius: var(--radius-md);
-  padding: 0.75rem;
-  cursor: pointer;
-  transition: border-color var(--transition-fast), background var(--transition-fast);
-}
-
-.batchItem:hover {
-  background: rgba(14, 165, 233, 0.05);
-}
-
-.activeBatch {
-  border-color: var(--accent-blue);
-  background: rgba(14, 165, 233, 0.08) !important;
-}
-
-/* Success layout styles */
-.successBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.successIcon {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1.5px solid rgba(16, 185, 129, 0.3);
-  color: #34d399;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
-  margin-bottom: 1.5rem;
-}
-
-.receipt {
-  width: 100%;
-  margin: 2rem 0;
-  background: rgba(2, 6, 23, 0.4);
-  border: 1px dashed rgba(14, 165, 233, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  text-align: left;
-}
-
-.receiptRow {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.88rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  padding-bottom: 0.5rem;
-}
-
-.receiptRow:last-child {
-  border: none;
-  padding: 0;
-}
-
-.receiptRow span {
-  color: var(--text-muted);
-}
-
-.finalInstruction {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 580px) {
-  .formGrid {
-    grid-template-columns: 1fr;
-  }
+  border-color: #000000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
 }

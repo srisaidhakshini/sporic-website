@@ -1,6 +1,6 @@
-/* DomainPages.module.css - Institutional Palette */
+/* DomainPages.module.css - Pure White & Crisp Black Theme */
 .domainPage {
-  background: #FAF8F3;
+  background: #FFFFFF;
   min-height: 100vh;
   padding-top: var(--nav-height);
 }
@@ -9,8 +9,8 @@
   position: relative;
   padding: 5rem 0 3rem 0;
   text-align: center;
-  background: #F1EDE4;
-  border-bottom: 1px solid #E5DED2;
+  background: #FAFAFA;
+  border-bottom: 1px solid #E5E5E5;
   overflow: hidden;
 }
 
@@ -18,41 +18,19 @@
   font-family: var(--font-heading);
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
-  color: #1F2328;
+  color: #111111;
   margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 1.1rem;
-  color: #6B6B6B;
+  color: #555555;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.glowOrb {
-  position: absolute;
-  top: -50%;
-  left: 30%;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  filter: blur(120px);
-  background: rgba(107, 31, 43, 0.05); /* Technology: Burgundy */
-  pointer-events: none;
-}
-
-.glowOrbCyan {
-  position: absolute;
-  top: -50%;
-  left: 30%;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  filter: blur(120px);
-  background: rgba(74, 20, 29, 0.05); /* Management: Dark Burgundy */
-  pointer-events: none;
-}
-
+.glowOrb,
+.glowOrbCyan,
 .glowOrbViolet {
   position: absolute;
   top: -50%;
@@ -61,6 +39,6 @@
   height: 500px;
   border-radius: 50%;
   filter: blur(120px);
-  background: rgba(176, 141, 87, 0.06); /* Leadership: Muted Gold */
+  background: rgba(0, 0, 0, 0.02);
   pointer-events: none;
 }

@@ -1,13 +1,14 @@
+/* Dashboard.module.css - Pure White & Crisp Black Theme */
 .dashboardPage {
   position: relative;
   min-height: calc(100vh - var(--nav-height));
   padding-top: calc(var(--nav-height) + 2rem);
   padding-bottom: 4rem;
-  background: #FAF8F3;
+  background: #FFFFFF;
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .welcomeBadge {
@@ -16,9 +17,9 @@
   gap: 0.5rem;
   padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  background: #F7ECEE;
-  border: 1px solid rgba(107, 31, 43, 0.2);
-  color: #6B1F2B;
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
+  color: #111111;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
@@ -27,7 +28,7 @@
 .roleTag {
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
-  background: #6B1F2B;
+  background: #000000;
   color: #FFFFFF;
   font-size: 0.75rem;
   font-weight: 700;
@@ -37,13 +38,15 @@
 .title {
   font-size: 2.25rem;
   font-weight: 800;
-  color: #1F2328;
+  color: #111111;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
 }
 
 .subtitle {
-  color: #6B6B6B;
+  color: #555555;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 .metricsGrid {
@@ -58,39 +61,40 @@
   flex-direction: column;
   justify-content: space-between;
   background: #FFFFFF;
-  border: 1px solid #E5DED2;
-  box-shadow: 0 4px 16px rgba(31, 35, 40, 0.04);
+  border: 1px solid #E5E5E5;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .metricTitle {
-  font-size: 0.8rem;
-  color: #858585;
+  font-size: 0.75rem;
+  color: #888888;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   margin-bottom: 0.5rem;
 }
 
 .metricValue {
   font-size: 2rem;
   font-weight: 800;
-  color: #1F2328;
+  color: #111111;
 }
 
 .metricSubtext {
   font-size: 0.8rem;
-  color: #6B1F2B;
-  font-weight: 600;
+  color: #555555;
+  font-weight: 500;
   margin-top: 0.25rem;
 }
 
 .tabsHeader {
   display: flex;
-  gap: 0.75rem;
-  border-bottom: 1px solid #E5DED2;
+  gap: 0.5rem;
+  border-bottom: 1px solid #E5E5E5;
   margin-bottom: 2rem;
   overflow-x: auto;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0;
 }
 
 .tabBtn {
@@ -98,23 +102,26 @@
   background: transparent;
   border: none;
   border-bottom: 2.5px solid transparent;
-  color: #6B6B6B;
+  color: #666666;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
   font-family: var(--font-heading);
+  font-size: 0.9rem;
 }
 
 .tabBtn:hover {
-  color: #6B1F2B;
+  color: #000000;
+  background: #FAFAFA;
 }
 
 .tabBtnActive {
-  color: #6B1F2B;
-  border-bottom-color: #6B1F2B;
-  background: #F7ECEE;
+  color: #000000 !important;
+  border-bottom: 2.5px solid #000000 !important;
+  background: #F5F5F5;
   border-radius: 6px 6px 0 0;
+  font-weight: 700;
 }
 
 .tableWrapper {
@@ -131,20 +138,20 @@
 .dataTable th,
 .dataTable td {
   padding: 1rem;
-  border-bottom: 1px solid #E5DED2;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .dataTable th {
-  color: #858585;
+  color: #666666;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   font-weight: 700;
-  background: #FAF8F3;
+  background: #FAFAFA;
 }
 
 .dataTable td {
-  color: #1F2328;
+  color: #111111;
   font-size: 0.9rem;
 }
 
@@ -164,21 +171,21 @@
 }
 
 .statusSuccess {
-  background: #ECFDF5;
-  color: #3F7D4A;
-  border: 1px solid #A7F3D0;
+  background: #F0FDF4;
+  color: #166534;
+  border: 1px solid #BBF7D0;
 }
 
 .statusPending {
-  background: #FFFBEB;
-  color: #B7791F;
-  border: 1px solid #FDE68A;
+  background: #FEFCE8;
+  color: #854D0E;
+  border: 1px solid #FEF08A;
 }
 
 .modalBackdrop {
   position: fixed;
   inset: 0;
-  background: rgba(31, 35, 40, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   z-index: 1000;
   display: flex;
@@ -193,6 +200,7 @@
   max-height: 90vh;
   overflow-y: auto;
   background: #FFFFFF;
-  border: 1px solid #E5DED2;
-  box-shadow: 0 16px 40px rgba(31, 35, 40, 0.15);
+  border: 1px solid #E5E5E5;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-lg);
 }

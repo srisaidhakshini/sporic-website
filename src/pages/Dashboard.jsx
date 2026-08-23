@@ -237,7 +237,7 @@ export default function Dashboard() {
             {activeTab === 'courses' && (
               <GlassCard padding="lg">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-                  <h3 style={{ color: '#1F2328', fontSize: '1.25rem' }}>Manage Courses Catalog</h3>
+                  <h3 style={{ color: '#111111', fontSize: '1.25rem', fontWeight: 700 }}>Manage Courses Catalog</h3>
                 </div>
 
                 <div className={styles.tableWrapper}>
@@ -290,7 +290,7 @@ export default function Dashboard() {
             {/* TAB 2: Faculty Grant Proposals */}
             {activeTab === 'grants' && (
               <GlassCard padding="lg">
-                <h3 style={{ color: '#1F2328', fontSize: '1.25rem', marginBottom: '1.5rem' }}>Faculty Research Proposals</h3>
+                <h3 style={{ color: '#111111', fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>Faculty Research Proposals</h3>
                 <div className={styles.tableWrapper}>
                   <table className={styles.dataTable}>
                     <thead>
@@ -327,7 +327,7 @@ export default function Dashboard() {
                                 Approve Proposal
                               </button>
                             ) : (
-                              <span style={{ color: '#3F7D4A', fontSize: '0.85rem' }}>✓ Approved</span>
+                              <span style={{ color: '#166534', fontWeight: 600, fontSize: '0.85rem' }}>✓ Approved</span>
                             )}
                           </td>
                         </tr>
@@ -341,7 +341,7 @@ export default function Dashboard() {
             {/* TAB 3: User Management */}
             {activeTab === 'users' && (
               <GlassCard padding="lg">
-                <h3 style={{ color: '#1F2328', fontSize: '1.25rem', marginBottom: '1.5rem' }}>System Registered Users</h3>
+                <h3 style={{ color: '#111111', fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>System Registered Users</h3>
                 <div className={styles.tableWrapper}>
                   <table className={styles.dataTable}>
                     <thead>
@@ -376,7 +376,7 @@ export default function Dashboard() {
             {/* TAB 4: Financial Audits */}
             {activeTab === 'payments' && (
               <GlassCard padding="lg">
-                <h3 style={{ color: '#1F2328', fontSize: '1.25rem', marginBottom: '1.5rem' }}>Razorpay Payment Audits</h3>
+                <h3 style={{ color: '#111111', fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>Razorpay Payment Audits</h3>
                 <div className={styles.tableWrapper}>
                   <table className={styles.dataTable}>
                     <thead>
@@ -413,7 +413,7 @@ export default function Dashboard() {
         {/* STUDENT ROLE VIEW */}
         {user.role === 'STUDENT' && (
           <GlassCard padding="lg">
-            <h3 style={{ color: '#1F2328', fontSize: '1.25rem', marginBottom: '1.5rem' }}>My Enrolled Courses</h3>
+            <h3 style={{ color: '#111111', fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>My Enrolled Courses</h3>
             {studentDashboard?.enrollments?.length > 0 ? (
               <div className={styles.tableWrapper}>
                 <table className={styles.dataTable}>
@@ -442,7 +442,7 @@ export default function Dashboard() {
                 </table>
               </div>
             ) : (
-              <p style={{ color: '#6B6B6B' }}>You are not currently enrolled in any active courses. Browse the catalog to register.</p>
+              <p style={{ color: '#555555' }}>You are not currently enrolled in any active courses. Browse the catalog to register.</p>
             )}
           </GlassCard>
         )}
@@ -452,21 +452,21 @@ export default function Dashboard() {
       {editingCourse && (
         <div className={styles.modalBackdrop}>
           <GlassCard className={styles.modalCard} padding="lg">
-            <h3 style={{ color: '#1F2328', marginBottom: '1rem' }}>Edit Course [{editingCourse.code}]</h3>
+            <h3 style={{ color: '#111111', fontWeight: 700, marginBottom: '1rem' }}>Edit Course [{editingCourse.code}]</h3>
             <form onSubmit={handleUpdateCourse}>
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', color: '#6B6B6B', fontSize: '0.85rem', marginBottom: '0.5rem' }}>Course Title</label>
-                <input type="text" value={editingCourse.title} disabled style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: '#F1EDE4', color: '#1F2328', border: '1px solid #D8CEC0' }} />
+                <label style={{ display: 'block', color: '#555555', fontSize: '0.85rem', marginBottom: '0.5rem', fontWeight: 600 }}>Course Title</label>
+                <input type="text" value={editingCourse.title} disabled style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: '#F5F5F5', color: '#111111', border: '1px solid #E5E5E5' }} />
               </div>
 
               <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', color: '#6B6B6B', fontSize: '0.85rem', marginBottom: '0.5rem' }}>Price (₹)</label>
-                <input type="number" value={editPrice} onChange={(e) => setEditPrice(e.target.value)} required style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: '#FFFFFF', color: '#1F2328', border: '1px solid #6B1F2B' }} />
+                <label style={{ display: 'block', color: '#555555', fontSize: '0.85rem', marginBottom: '0.5rem', fontWeight: 600 }}>Price (₹)</label>
+                <input type="number" value={editPrice} onChange={(e) => setEditPrice(e.target.value)} required style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: '#FFFFFF', color: '#111111', border: '1px solid #CCCCCC' }} />
               </div>
 
               <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ display: 'block', color: '#6B6B6B', fontSize: '0.85rem', marginBottom: '0.5rem' }}>Course Status</label>
-                <select value={editStatus} onChange={(e) => setEditStatus(e.target.value)} style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: '#FFFFFF', color: '#1F2328', border: '1px solid #D8CEC0' }}>
+                <label style={{ display: 'block', color: '#555555', fontSize: '0.85rem', marginBottom: '0.5rem', fontWeight: 600 }}>Course Status</label>
+                <select value={editStatus} onChange={(e) => setEditStatus(e.target.value)} style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: '#FFFFFF', color: '#111111', border: '1px solid #CCCCCC' }}>
                   <option value="PUBLISHED">PUBLISHED</option>
                   <option value="DRAFT">DRAFT</option>
                   <option value="ARCHIVED">ARCHIVED</option>
